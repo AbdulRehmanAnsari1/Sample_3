@@ -1,0 +1,162 @@
+body {
+    font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header-container {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-menu {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sina-logo {
+    width: 80px;
+}
+
+.main-title {
+    color: #424242;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.nav-style {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #424242;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.nav-link:hover {
+    color: #c30216;
+}
+
+/* Image Gallery */
+.image-gallery {
+    position: relative;
+}
+
+.slideshow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #424242;
+}
+
+/* Content Styles */
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.career-content {
+    margin-bottom: 40px;
+}
+
+.career-content h2 {
+    font-size: 2em;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+.career-content p {
+    font-size: 1em;
+    line-height: 1.75em;
+    color: #424242;
+}
+
+.beliefs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.belief-card {
+    width: 22%;
+    padding: 20px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.belief-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.belief-card p {
+    font-size: 1em;
+}
+
+/* Button Styles */
+.cta-button {
+    text-align: center;
+}
+
+.btn {
+    background-color: #408bc4;
+    border: 1px solid #7e8afc;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #7e8afc;
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}

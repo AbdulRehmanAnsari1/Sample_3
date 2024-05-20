@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Your CSS code here */
+    </style>
+</head>
+<body>
+<!-- Welcome Message Modal -->
+<div id="welcome-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="message-content">
+            <p>Welcome to Foodie Haven! Explore our delicious menu and enjoy your meal.</p>
+        </div>
+    </div>
+</div>
+
+<header>
+    <h1>Foodie Haven</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#offers-section">Offers/Discounts</a></li>
+            <li><a href="loginsignup.html" id="loginSignupBtn">Login/Signup</a></li>
+            <li class="dropdown">
+                <a href="dropdown.html" class="dropbtn">&#9776;</a>
+                <div class="dropdown-content">
+                    <a href="careers.html">Careers</a>
+                    <a href="#blogs">Blogs</a>
+                    <a href="#about">About</a>
+                    <a href="#customer-care">Connect with Us</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for food...">
+        <button id="searchButton">Search</button>
+    </div>
+</header> 
+
+
+
+<section id="menu">
+    <h2>Menu</h2>
+    <div class="slideshow-container">
+        <div class="food-item">
+            <img src="2.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Delicious veg and non-veg patty with fresh lettuce and tomatoes.</p>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <form>
+                <label for="burgerToppings">Choose Toppings:</label>
+                <select id="burgerToppings" name="burgerToppings">
+                    <option value="none">None</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="onion">Onion</option>
+                </select>
+                <label for="spiceLevel">Choose Spice Level:</label>
+                <select id="spiceLevel" name="spiceLevel">
+                    <option value="mild">Mild</option>
+                    <option value="medium">Medium</option>
+                    <option value="spicy">Spicy</option>
+                </select>
+            </form>
+        </div>
+        <div class="food-item">
+            <img src="1.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Classic Margherita with tomato, mozzarella, and basil.</p>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <form>
+                <label for="pizzaToppings">Choose Toppings:</label>
+                <select id="pizzaToppings" name="pizzaToppings">
+                    <option value="none">None</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="bellpeppers">Bell Peppers</option>
+                </select>
+                <label for="spiceLevel">Choose Spice Level:</label>
+                <select id="spiceLevel" name="spiceLevel">
+                    <option value="mild">Mild</option>
+                    <option value="medium">Medium</option>
+                    <option value="spicy">Spicy</option>
+                </select>
+            </form>
+        </div>
+        <!-- Add more food items here -->
+    </div>
+    <div class="menu-navigation">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+</section>
+
+<section id="cart">
+    <h2>Food Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-total">
+        <p>Total: <span id="totalAmount">$0.00</span></p>
+    </div>
+
+    <a id="confirm-order-btn" href="checkout.html">Confirm Order</a>
+
+ 
+</section>
+
+<section id="reviews">
+    <h2>Reviews and Ratings</h2>
+    <h3>Add Your Review</h3>
+    <form id="review-form">
+        <textarea id="review-input" placeholder="Write your review" required></textarea>
+        <label for="rating-input">Rating:</label>
+        <input type="number" id="rating-input" min="1" max="5" step="1" placeholder="1-5" required>
+        <button type="submit" id="submit-review-btn">Submit Review</button>
+    </form>
+    <div id="user-reviews">
+        <!-- Sample reviews added here -->
+        <div class="review">
+            <p><strong>Franklin Richards:</strong> Excellent service and quality food!</p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Thomas White:</strong> Fast delivery and tasty dishes. Will order again!</p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Jack Daniels:</strong> Great service and taste. Will order again!</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Angelina Watson:</strong> Recommend everyone to order food from here</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Sunil Kumar:</strong> Service is outstanding ordering again </p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Jack Bruce:</strong> Fast delivery and tasty dishes. Will order again!</p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Anil Singh:</strong> Great service and taste. Will order again!</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Sonali Kumari:</strong> Recommend everyone to order food from here</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Deepender Sharma:</strong> Service is outstanding ordering again </p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Henry Hemsworth:</strong> Fast delivery and tasty dishes. Will order again!</p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+        <div class="review">
+            <p><strong>Mike Brenson:</strong> Great service and taste. Will order again!</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Sophia Lee:</strong> Recommend everyone to order food from here</p>
+            <p><strong>Rating:</strong> 5</p>
+        </div>
+        <div class="review">
+            <p><strong>Sarah White:</strong> Service is outstanding ordering again </p>
+            <p><strong>Rating:</strong> 4</p>
+        </div>
+    </div>
+</section>
+
+<section id="offers-section">
+    <section id="specials">
+        <h2>Specials</h2>
+        <div class="offer">
+            <h3>Combo Deal</h3>
+            <p>Get a burger, fries, and a drink for only $12.99!</p>
+        </div>
+        <div class="offer">
+            <h3>Family Meal</h3>
+            <p>Enjoy a large pizza, garlic bread, and a salad for just $19.99!</p>
+        </div>
+    </section>
+    <section id="coupons">
+        <h2>Coupons</h2>
+        <div class="coupon">
+            <h3>20% Off Pizza</h3>
+            <p>Use code PIZZA20 to get 20% off on any pizza!</p>
+        </div>
+        <div class="coupon">
+            <h3>Free Dessert</h3>
+            <p>Get a free dessert with any purchase of $25 or more!</p>
+        </div>
+    </section>
+</section>
+<button id="scrollTopBtn" class="scroll-top-btn">Top</button>
+
+<footer>
+    <section id="customer-care">
+        <h3>Customer Care</h3>
+        <p>If you have any questions or encounter issues with your orders, our customer support team is here to help.</p>
+        <ul>
+            <li><strong>Chat:</strong> Click here to chat with us</li>
+            <li><strong>Email:</strong> support@foodiehaven.com</li>
+            <li><strong>Phone:</strong> 1-800-123-4567</li>
+        </ul>
+    </section>
+    <div class="sfooter">
+        <div class="footercontainer">
+            <nav style="margin: auto; text-align:center;">
+                <a style="padding:10px;"
+                    href="#" target="_self"><img
+                        src="https://sinalite.com/media/images/socialmedia-icon/linkedin.png"></a>
+                <a style="padding:10px;"
+                    href="#" target="_self"><img
+                        src="https://sinalite.com/media/images/socialmedia-icon/youtube.png"></a>
+                <a style="padding:10px;" href="#" target="_self"><img
+                        src="https://sinalite.com/media/images/socialmedia-icon/facebook.png"></a>
+                
+                        <a style="padding:10px;" href="#" target="_self"><img
+                            src="https://sinalite.com/media/images/socialmedia-icon/twitter.png"></a>        
+            </nav>
+        </div>
+    </div>
+    <p>&copy; 2024 Foodie Haven. All rights reserved. | Creater and Author : Abdul Rehman</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // Your JavaScript code here
+</script>
+
+</body>
+</html>
