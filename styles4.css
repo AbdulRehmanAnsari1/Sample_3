@@ -215,12 +215,14 @@
     /*------------------------------------------------------------------
                           FOOTER STYLES
     -------------------------------------------------------------------*/
-    footer{
-      text-align:center;
-      height:52px;
-      background:#ededed;
-      line-height:52px;
-    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    clear: both; /* Ensures footer clears floated content */
+}
 
     /*------------------------------------------------------------------
                           MEDIA QUERIES STYLES
